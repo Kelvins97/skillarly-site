@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skillarly – AI Career Assistant</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Skillarly<span>AI</span></h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="/terms.html" target="_blank">Terms</a></li>
+          <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://twitter.com/skillarly_ai" target="_blank" aria-label="Twitter">
+            <img src="icons/twitter.svg" alt="Twitter" />
+          </a>
+          <a href="https://linkedin.com/company/skillarly" target="_blank" aria-label="LinkedIn">
+            <img src="icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://instagram.com/skillarly" target="_blank" aria-label="Instagram">
+            <img src="icons/instagram.svg" alt="Instagram" />
+          </a>
+          <button id="theme-toggle">🌙</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Get AI-Powered Career Guidance from Your LinkedIn Profile</h2>
+      <p>Receive job, course, and certification recommendations tailored to your skills — straight from your profile.</p>
+      <a class="cta" href="#">Install Chrome Extension</a>
+    </div>
+  </section>
+
+  <section id="how" class="how">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">🔐 Connect with LinkedIn</div>
+        <div class="step">🧠 AI analyzes your skills</div>
+        <div class="step">📬 Get email recommendations</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Features</h2>
+      <ul>
+        <li>✅ Personalized job & course recommendations</li>
+        <li>🧠 GPT-powered skill matching</li>
+        <li>📬 Daily or weekly smart emails</li>
+        <li>🌙 Light/Dark mode</li>
+        <li>🔒 Fully private — no scraping</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2>Pricing Plans</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Basic</h3>
+          <p>$0 / month</p>
+          <ul>
+            <li>LinkedIn Scan</li>
+            <li>Course Suggestions</li>
+            <li>Limited Jobs</li>
+          </ul>
+          <button disabled>Included</button>
+        </div>
+        <div class="plan highlighted">
+          <h3>Pro</h3>
+          <p>$5 / month</p>
+          <ul>
+            <li>All Basic Features</li>
+            <li>Full Job Matching</li>
+            <li>Email Recommendations</li>
+          </ul>
+          <button disabled>Coming Soon</button>
+        </div>
+        <div class="plan">
+          <h3>Premium</h3>
+          <p>$15 / month</p>
+          <ul>
+            <li>Pro + Skill Analytics</li>
+            <li>Custom AI Coaching</li>
+            <li>Priority Support</li>
+          </ul>
+          <button disabled>Coming Soon</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details>
+        <summary>How does Skillarly get my data?</summary>
+        <p>We use LinkedIn OAuth to securely fetch your name and email — no scraping involved.</p>
+      </details>
+      <details>
+        <summary>How do I unsubscribe from emails?</summary>
+        <p>Use the link in any email or in the extension settings.</p>
+      </details>
+      <details>
+        <summary>What happens to my data?</summary>
+        <p>It stays private. We don’t share or sell it. Ever.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: support@skillarly.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Skillarly. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+    });
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+    }
+  </script>
+</body>
+</html>
