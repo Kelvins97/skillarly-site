@@ -1,12 +1,12 @@
 {
   "redirects": [
     {
-      "source": "/terms.html",
+      "source": "/terms.html(?/.*)",
       "destination": "/terms",
       "permanent": true
     },
     {
-      "source": "/privacy.html",
+      "source": "/privacy.html(?/.*)",
       "destination": "/privacy",
       "permanent": true
     }
