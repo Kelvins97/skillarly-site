@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillarly - Resume Analysis & Job Matching</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#1e40af'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">Skillarly</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#how-it-works" class="text-gray-500 hover:text-gray-900">How it Works</a>
+                    <a href="#pricing" class="text-gray-500 hover:text-gray-900">Pricing</a>
+                    <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition-colors">
+                        Get Started
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-5xl font-bold text-gray-900 mb-6">
+                        Stop Applying Blindly.<br>
+                        <span class="text-primary">Get Targeted.</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Upload your resume once. Get instant analysis showing exactly which jobs you're qualified for and what skills to add for better matches.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-primary text-white px-8 py-3 rounded-lg text-lg hover:bg-secondary transition-colors">
+                            Analyze My Resume Free
+                        </button>
+                        <button class="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg text-lg hover:bg-gray-50 transition-colors">
+                            See Example Report
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl p-6">
+                    <div class="bg-gray-100 rounded-lg p-4 mb-4">
+                        <div class="flex items-center mb-2">
+                            <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                            <span class="font-semibold">Resume Analysis Complete</span>
+                        </div>
+                        <p class="text-sm text-gray-600">Found 23 matching jobs • 5 skills to improve</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center p-3 bg-blue-50 rounded">
+                            <span class="font-medium">Senior Frontend Developer</span>
+                            <span class="text-green-600 font-bold">95% Match</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-yellow-50 rounded">
+                            <span class="font-medium">Full Stack Engineer</span>
+                            <span class="text-yellow-600 font-bold">78% Match</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-red-50 rounded">
+                            <span class="font-medium">DevOps Engineer</span>
+                            <span class="text-red-600 font-bold">45% Match</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">The Job Search Problem</h3>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    You're applying to dozens of jobs but getting few responses. You don't know if your resume matches what employers want or which skills would actually help you land interviews.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-red-600 text-2xl">❌</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Spray & Pray Approach</h4>
+                    <p class="text-gray-600">Applying to every job hoping something sticks</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-red-600 text-2xl">🤷</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Skill Gap Mystery</h4>
+                    <p class="text-gray-600">No idea what skills you're missing for better roles</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-red-600 text-2xl">⏰</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Wasted Time</h4>
+                    <p class="text-gray-600">Hours spent on applications for jobs you're not qualified for</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h3 class="text-3xl font-bold text-gray-900 mb-8">Here's What You Get Instead</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-green-600 text-2xl">🎯</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Targeted Job Matches</h4>
+                    <p class="text-gray-600">Only see jobs where you have 70%+ skill match</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-green-600 text-2xl">📈</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Skill Gap Analysis</h4>
+                    <p class="text-gray-600">Exact skills to learn for your dream roles</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-green-600 text-2xl">⚡</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Instant Results</h4>
+                    <p class="text-gray-600">Complete analysis in under 30 seconds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">How Skillarly Works</h3>
+                <p class="text-xl text-gray-600">Three simple steps to better job applications</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold">1</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Upload Resume</h4>
+                    <p class="text-gray-600">Drag and drop your resume. We'll extract your skills, experience, and qualifications automatically.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold">2</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">AI Analysis</h4>
+                    <p class="text-gray-600">Our AI compares your profile against thousands of current job postings to find your best matches.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold">3</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Get Results</h4>
+                    <p class="text-gray-600">See your job matches, skill gaps, and specific recommendations to improve your candidacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Simple, Fair Pricing</h3>
+                <p class="text-xl text-gray-600">Pay once, use until you land your job</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Free -->
+                <div class="border border-gray-200 rounded-lg p-8">
+                    <h4 class="text-xl font-semibold mb-2">Free Analysis</h4>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$0</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Basic resume analysis</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 5 job matches</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Skill overview</li>
+                    </ul>
+                    <button class="w-full border border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 transition-colors">
+                        Try Free
+                    </button>
+                </div>
+
+                <!-- Pro -->
+                <div class="border-2 border-primary rounded-lg p-8 relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm">
+                        Most Popular
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Complete Report</h4>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$29</span>
+                        <span class="text-gray-600">/one-time</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Full resume analysis</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Unlimited job matches</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Detailed skill gap analysis</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Salary insights</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Resume optimization tips</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 90-day job alerts</li>
+                    </ul>
+                    <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-secondary transition-colors">
+                        Get Complete Report
+                    </button>
+                </div>
+
+                <!-- Premium -->
+                <div class="border border-gray-200 rounded-lg p-8">
+                    <h4 class="text-xl font-semibold mb-2">Career Boost</h4>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$99</span>
+                        <span class="text-gray-600">/one-time</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Everything in Complete</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Personal career roadmap</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Course recommendations</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Interview prep materials</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 6-month job tracking</li>
+                    </ul>
+                    <button class="w-full border border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 transition-colors">
+                        Boost My Career
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-primary">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-white mb-4">Ready to Stop Wasting Time on Wrong Jobs?</h3>
+            <p class="text-xl text-blue-100 mb-8">
+                Upload your resume and get instant insights into which jobs you should actually apply for.
+            </p>
+            <button class="bg-white text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                Analyze My Resume - Free
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h5 class="font-bold text-lg mb-4">Skillarly</h5>
+                    <p class="text-gray-400">Stop applying blindly. Get targeted job matches based on your actual skills.</p>
+                </div>
+                <div>
+                    <h6 class="font-semibold mb-4">Product</h6>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">How it Works</a></li>
+                        <li><a href="#" class="hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white">Example Report</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold mb-4">Support</h6>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                        <li><a href="mailto:support@skillarly.com" class="hover:text-white">Contact</a></li>
+                        <li><a href="#" class="hover:text-white">Help Center</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold mb-4">Legal</h6>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/privacy" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="/terms" class="hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
+                <p>&copy; 2025 Skillarly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
